@@ -114,7 +114,8 @@ function App() {
         speed: speedClean
       }
       
-      const res = await axios.post('http://127.0.0.1:5000/predict', payload)
+      // Change localhost to your new Render URL
+      const res = await axios.post('https://saferoute-api.onrender.com/predict', payload)
       setResult(res.data)
       
     } catch (err) {
